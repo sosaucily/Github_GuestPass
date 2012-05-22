@@ -7,4 +7,4 @@ Github_GuestPass give repository owners the ability to grant temporary read-only
 Current plan:
 
 * Authentication is granted via OAuth, using GitHub API v3
-* System is written in ruby and packaged as a gem for your site.
+* System is written in ruby, likely with Sinatra backend
