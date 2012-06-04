@@ -1,0 +1,222 @@
+
+.main, section {
+    width: 100%;
+    padding-bottom: 5em;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+section > .row{
+    padding-left: 100px;
+}
+
+.lp {
+    padding-left: 1.5em;
+}
+
+.tp {
+    padding-top: 1.5em;
+}
+
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+
+/*
+
+Here are some nice colors for your viewing pleasure.
+
+Thanks for using Azure!
+
+*/
+
+.bg-red {
+    background-color: #c03930;
+}
+.bg-orange {
+    background-color: #d8561e;
+}
+.bg-orange-yellow {
+    background-color: #ffa71a;
+}
+
+
+.bg-green {
+    background-color: #47a74d;
+}
+.bg-blue {
+    background-color: #2a8fbd;
+}
+.bg-purple {
+    background-color: #bc223f;
+}
+
+
+.bg-pink {
+    background-color: #e84a5f;
+}
+.bg-tan {
+    background-color: #e8de8f;
+}
+.bg-forest-green {
+    background-color: #607848;
+}
+
+
+.bg-royal-purple {
+    background-color: #490a3d;
+}
+.bg-dragonfruit {
+    background-color: #bd1550;
+}
+.bg-sand {
+    background-color: #f0a639;
+}
+
+
+.bg-sky {
+    background-color: #39abcc;
+}
+.bg-lime {
+    background-color: #92f606;
+}
+.bg-grass {
+    background-color: #1eb908;
+}
+
+
+.bg-cyan {
+    background-color: #48eddc;
+}
+.bg-turquoise {
+    background-color: #1ba897;
+}
+.bg-peach {
+    background-color: #d890b0;
+}
+
+
+.bg-stone {
+    background-color: #8c9a9d;
+}
+.bg-army-green {
+    background-color: #646b49;
+}
+.bg-neon-orange {
+    background-color: #ff4824;
+}
+
+
+.bg-ocean {
+    background-color: #274be4;
+}
+.bg-neon-red {
+    background-color: #fe002d;
+}
+.bg-brown {
+    background-color: #b1721e;
+}
+
+
+.bg-pastel-red {
+    background-color: #a56357;
+}
+.bg-pastel-blue {
+    background-color: #60a9ba;
+}
+.bg-grey {
+    background-color: #ccc;
+}
+.bg-gray {
+    background-color: #ccc;
+}
+
+
+/**/
+
+/************************************/
+
+.rounded {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.black {
+    color: #222;
+}
+
+.white {
+    color: #fff;
+}
+
+/************************************/
+
+body {
+    font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+/************************************/
+
+.header {
+    margin: 0;
+    padding-left: 100px;
+    background: #fff;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+
+.nav-pills {
+    margin-top: 1.5em;
+}
+
+img {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/**** HEADERS ****/
+.sect-head {
+    border-bottom: 5px solid rgba(33, 33, 33, 0.4);
+    text-align: left;
+    padding: 0.6em;
+    padding-left: 100px;
+    margin-bottom: 1.5em;
+    color: #fff;
+}
+
+/************************************/
+
+.footer {
+    background: #222;
+    color: #888;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 5px solid rgba(11, 11, 11, 0.4);
+    text-shadow: #111 1px 1px 0px;
+}
+
+.footer h1 {
+    color: #aaa;
+}
+.footer h2 {
+    color: #aaa;
+}
+.footer h3 {
+    color: #aaa;
+}
+.footer h4 {
+    color: #aaa;
+}
+.footer h5 {
+    color: #aaa;
+}
+.footer h6 {
+    color: #aaa;
+}

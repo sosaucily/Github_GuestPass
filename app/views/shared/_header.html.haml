@@ -1,0 +1,11 @@
+%header.header.hero-unit
+  %h1 Github GuestPass
+  %h4
+    %em Easy read-only access to your projects!
+  %ul.nav.nav-pills
+    %li.active
+      %a{:href => "index.html"} Home
+    %li
+      =link_to("Programmer",:controller => "home", :action => "programmer")
+    %li
+      %a{:href => "reviewer.html"} Reviewer
