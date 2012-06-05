@@ -1,0 +1,21 @@
+%section#authed-programmers
+  %header
+    %h1.sect-head.bg-red Programmers - Share your projects!
+  .row
+    .span5
+      %h2 Your Projects
+      %div.projects
+        - @all_repos.each do |repo|
+          %p
+            - if(repo.private) then
+              %span.label.label-important Private
+            - else
+              %span.label.label-success Public
+            = repo.name
+      %p
+        
+    .span5.offset1
+      %h2 Authenticate Here
+      %h4 Please auth to github and start granting access to your projects!
+      %br
+      = @mysession.to_yaml

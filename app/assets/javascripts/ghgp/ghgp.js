@@ -1,0 +1,1 @@
+Ghgp = Ember.Application.create();
