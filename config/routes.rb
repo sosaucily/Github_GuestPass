@@ -1,5 +1,8 @@
 GithubGuestpass::Application.routes.draw do
   get "home/index"
+  match "programmer_auth" => 'home#programmer_auth'
+  get "programmer" => 'home#programmer'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

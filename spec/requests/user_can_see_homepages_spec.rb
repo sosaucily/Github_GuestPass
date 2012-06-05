@@ -1,10 +1,11 @@
 require 'spec_helper'
 
-describe "UserCanSeeHomepage" do
-  it "works! (now write some real specs)" do
-    # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-    #get user_can_see_homepages_path
-    #response.status.should be(200)
-    pending
+describe "User" do
+  
+  describe "can see homepage" do
+    it "shows the homepage when a user visits the root url" do
+      visit '/'
+      page.should have_selector('section#home-programmers')
+    end
   end
 end
