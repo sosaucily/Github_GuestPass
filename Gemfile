@@ -7,7 +7,6 @@ gem 'rails', '3.2.5'
 
 gem 'sqlite3'
 gem 'haml'
-gem 'ember-rails'
 gem 'octokit'
 
 # Gems used only for assets and not required
@@ -27,6 +26,7 @@ end
 gem 'jquery-rails'
 
 gem "rspec-rails", :group => [:test, :development]
+gem "jasmine", :group => [:test, :development]
 
 group :development do
   gem 'growl'

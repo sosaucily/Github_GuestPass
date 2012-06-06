@@ -25,8 +25,14 @@ class HomeController < ApplicationController
   end
   
   def programmer
-    client = Programmer.auth_user_from_session(session)
-    @all_repos = client.repositories()
   end
   
+  def get_projects
+    client = Programmer.auth_user_from_session(session)
+    @all_repos = client.repositories()
+    respond_to do |format|
+      flash.now[:notice] = 'Successfully loaded projects from Github'
+      format.html { render :partial => 'get_projects',  :layout => false}
+    end
+  end
 end

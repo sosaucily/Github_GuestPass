@@ -1,0 +1,44 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+$ ->
+	progress = setInterval ()->
+		$bar = $('div#project-progress-bar div.bar')
+
+		if $bar.width() < 200
+			$bar.width $bar.width()+50
+		else if	$bar.width() < 247
+			$bar.width $bar.width()+47
+		else
+			clearInterval(progress)
+			$('.progress').removeClass('active')
+
+		if $bar.width() > 247
+			$bar.text("100%")
+		else
+			$bar.text(Math.round(($bar.width()*100)/247) + "%")
+	, 50
+		
+	$.ajax '/get_projects',
+		type: 'GET'
+		dataType: 'html'
+		error: (jqXHR, textStatus, errorThrown) ->
+			$('div.projects').append "<div class='alert alert-info'>
+			  <a class='close' data-dismiss='alert' href='#'>×</a>
+			  <p>
+			    Error loading projects #{textStatus}
+			  </p>
+			</div>";
+			$bar = $('div#project-progress-bar div.bar')
+			$bar.width(247)
+			$bar.text("100%")
+			$('div#project-progress-bar').fadeOut(2000)
+		success: (data, textStatus, jqXHR) ->
+			$('div.projects').append data
+			$('div.projects div.alert').fadeOut(2000);
+			clearInterval(progress)
+			$bar = $('div#project-progress-bar div.bar')
+			$bar.width(247)
+			$bar.text("100%")
+			$('div#project-progress-bar').fadeOut(2000)
+			

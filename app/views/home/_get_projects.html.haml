@@ -1,0 +1,14 @@
+=render :partial => "shared/flash_messages", :locals => {:flash => flash}
+= form_tag("/share",method:"post",name:"ghgp_share") do
+  - @all_repos.each do |repo|
+    %p
+      %input{:type=>"checkbox", :id=>"project-select-#{repo.id}"}
+      - if(repo.private) then
+        %span.label.label-important Private
+      - else
+        %span.label.label-success Public
+      = repo.name
+  %h3 Email of Reviewer
+  %input#reviewer-email{type:"text", name:"reviewer-email", placeholder:"Reviewer Email"}
+  %br
+  %button Share!

@@ -5,17 +5,16 @@
     .span5
       %h2 Your Projects
       %div.projects
-        - @all_repos.each do |repo|
-          %p
-            - if(repo.private) then
-              %span.label.label-important Private
-            - else
-              %span.label.label-success Public
-            = repo.name
+        %div.progress.progress-striped.active#project-progress-bar
+          %div.bar
       %p
         
     .span5.offset1
-      %h2 Authenticate Here
-      %h4 Please auth to github and start granting access to your projects!
+      %h2 Sharing Projects
+      %span
+        Select the Github project you want to share with a 
+        %em reviewer.
+        Then enter their email address in the field and hit
+        %em Share!
       %br
       = @mysession.to_yaml

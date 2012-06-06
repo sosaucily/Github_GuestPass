@@ -13,5 +13,4 @@
       = form_tag("/programmer_auth",method:"post",name:"ghgp_auth") do
         %input#email{type:"text", name:"username", placeholder:"Your Email"}
         %input#password{type:"password", name:"password", placeholder:"Your GH Password"}
-        -#%input{:type => "submit", :value => "Authenticate", :class => "button"}
         %button Authenticate
